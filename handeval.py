@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 import numpy as np
 
 # Load models once
-reader = easyocr.Reader(['en'], gpu=False)
+
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 st.title("📄 HandEval.AI – Answer Sheet Evaluation")
