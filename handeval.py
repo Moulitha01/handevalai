@@ -50,7 +50,7 @@ def evaluate_answers(key_text, student_text):
 answer_key_pdf = st.file_uploader("📘 Upload Answer Key (PDF)", type=["pdf"])
 student_pdf = st.file_uploader("📝 Upload Student Answer Sheet (PDF)", type=["pdf"])
 
-if st.button("⚡ Evaluate"):
+
     if answer_key_pdf and student_pdf:
         st.write("⏳ Extracting text from PDFs...")
         key_text = extract_text_from_pdf(answer_key_pdf)
