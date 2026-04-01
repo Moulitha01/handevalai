@@ -13,7 +13,7 @@ st.title("📄 HandEval.AI – Answer Sheet Evaluation")
 # -------------------------------
 # Function: Extract text from PDF
 # -------------------------------
-
+def extract_text_from_pdf(pdf_file):
     try:
         pdf_bytes = pdf_file.read()
         doc = fitz.open(stream=pdf_bytes, filetype="pdf")
